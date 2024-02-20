@@ -51,7 +51,7 @@ IMG = [
 STICKER = [
     "CAACAgUAAx0CYlaJawABBy4vZaieO6T-Ayg3mD-JP-f0yxJngIkAAv0JAALVS_FWQY7kbQSaI-geBA",
     "CAACAgUAAx0CYlaJawABBy4rZaid77Tf70SV_CfjmbMgdJyVD8sAApwLAALGXCFXmCx8ZC5nlfQeBA",
-    "CAACAgUAAx0CYlajhJawABBy4jZaidvIXNPYnpAjNnKgzaHmh3cvoAAiwIAAIda2lVNdNI2QABHuVVHgQ",
+    "CAACAgUAAx0CYlaJawABBy4jZaidvIXNPYnpAjNnKgzaHmh3cvoAAiwIAAIda2lVNdNI2QABHuVVHgQ",
 ]
 
 #---------------STICKERS---------------#
@@ -59,8 +59,8 @@ STICKER = [
 
 #---------------EMOJIOS---------------#
 
-EMOJIOS = n  [
-    "💣"mn bjn,
+EMOJIOS = [
+    "💣",
     "💥",
     "🪄",
     "🧨",
@@ -72,10 +72,10 @@ EMOJIOS = n  [
     "🕊",
 ]
 
-jkbkn
+
 #---------------EMOJIOS---------------#
 
-@Lovechat.on_kj nmcmd(["start", "aistart"])
+@Lovechat.on_cmd(["start", "aistart"])
 async def start(_, m: Message):
     if m.chat.type == ChatType.PRIVATE:
         accha = await m.reply_text(
@@ -83,8 +83,8 @@ async def start(_, m: Message):
         )
         await asyncio.sleep(1.3)
         await accha.edit("__ᴅιиg ᴅσиg ꨄ︎ ѕтαятιиg..__")
-        await asyncio.slee jhbhp(0.2)bvuyf
-        await accha.edit("__ᴅιиg ᴅ bnvb bbnv σиg ꨄ sтαятιиg.....__")
+        await asyncio.sleep(0.2)
+        await accha.edit("__ᴅιиg ᴅσиg ꨄ sтαятιиg.....__")
         await asyncio.sleep(0.2)
         await accha.edit("__ᴅιиg ᴅσиg ꨄ︎ sтαятιиg..__")
         await asyncio.sleep(0.2)
@@ -94,7 +94,7 @@ async def start(_, m: Message):
         await umm.delete()
         await m.reply_photo(
             photo=random.choice(IMG),
-            caption=f"""**๏ ʜᴇʏ, ɪ ᴀᴍ {Lovechat.name}**\n**➻ ᴀɴ ᴀhgytftɪ ʙᴀsᴇᴅ ᴄʜᴀᴛʙᴏᴛ.**\n**──────────────**\n**➻ ᴜsᴀɢᴇ /chatbot bjhbgyugyf[ᴏɴ/ᴏғғ]**\n<b>||biuby๏ ʜɪᴛ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ ғᴏʀ ʜᴇʟᴘ||</b>""",
+            caption=f"""**๏ ʜᴇʏ, ɪ ᴀᴍ {Lovechat.name}**\n**➻ ᴀɴ ᴀɪ ʙᴀsᴇᴅ ᴄʜᴀᴛʙᴏᴛ.**\n**──────────────**\n**➻ ᴜsᴀɢᴇ /chatbot [ᴏɴ/ᴏғғ]**\n<b>||๏ ʜɪᴛ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ ғᴏʀ ʜᴇʟᴘ||</b>""",
             reply_markup=InlineKeyboardMarkup(DEV_OP),
         )
         await add_served_user(m.from_user.id)
